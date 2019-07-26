@@ -4,7 +4,7 @@ $fontsizeone: 24px;
 $fontsizetwo: 20px;
 $fontsizethr: 18px;
 $fontsizefour: 16px;
-$min-width:1200px;
+$min-width:1000px;
 * {
   box-sizing: border-box;
   // outline: 1px solid red;
@@ -14,6 +14,7 @@ html {
   min-width: $min-width;
   height: 100%;
   overflow-y: hidden;
+  margin: auto;
 }
 body {
   margin: 0;
@@ -21,13 +22,14 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  min-width: $min-width;
+  margin: auto;
+  // min-width: $min-width;
   background-color: $bgccolor
 }
 .main {
   width: 100%;
   height: 100vh;
-  min-width: $min-width;
+  // min-width: $min-width;
   position: relative;
   margin: auto;
   overflow: hidden;
