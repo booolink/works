@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  
   margin: 0;
   padding: 0;
   width: 100%;
@@ -29,7 +28,6 @@ body {
 }
 
 .main {
-  // width: 100%;
   height: 100%;
   position: relative;
   margin: auto;
@@ -37,8 +35,8 @@ body {
   //主要背景
   & .bg {
     width: 100%;
-    height: 100%;
-    // background: url(../image/back.png) center center no-repeat;
+    height: 100vh;
+    background: url(../image/back.png) center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
