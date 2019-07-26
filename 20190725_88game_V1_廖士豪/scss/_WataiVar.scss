@@ -13,7 +13,7 @@ html {
   width: 100%;
   min-width: $min-width;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   margin: auto;
 }
 body {
@@ -21,7 +21,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   margin: auto;
   // min-width: $min-width;
   background-color: $bgccolor
@@ -32,7 +32,7 @@ body {
   // min-width: $min-width;
   position: relative;
   margin: auto;
-  overflow: hidden;
+  // overflow: hidden;
 }
 //主要背景
 .bg {
