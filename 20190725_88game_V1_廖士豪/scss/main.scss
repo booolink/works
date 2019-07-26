@@ -167,9 +167,8 @@
     }
   }
 }
-@media screen and (max-width:500px){
-  .main{
-    // margin-left: -70%;
-    transform: scale(0.9) ;
+@media screen and (max-width:1000px){
+  .center{
+    transform: translate(-35%)
   }
 }
