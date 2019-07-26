@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 1000px;
+  min-width: 1000px;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  min-width: 1000px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  min-width: 1000px;
+}
+
+a {
+  width: 172px;
+  height: 50px;
+  line-height: 250%;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#701519), to(#bc1b21));
+  background: linear-gradient(0deg, #701519 0%, #bc1b21 100%);
+}
+
+a:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: url(../image/back.png) center top no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  z-index: -999;
+}
+
+input {
+  background: transparent;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  color: #fff;
+  width: 70%;
+  height: 40px;
+  font-weight: 900;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@-webkit-keyframes player_Lani {
+  0% {
+    left: 5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes player_Lani {
+  0% {
+    left: 5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes player_Rani {
+  0% {
+    top: 58%;
+    left: 40%;
+  }
+  100% {
+    top: 50%;
+    left: 45%;
+  }
+}
+
+@keyframes player_Rani {
+  0% {
+    top: 58%;
+    left: 40%;
+  }
+  100% {
+    top: 50%;
+    left: 45%;
+  }
+}
+
+.center {
+  min-width: 420px;
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.center > .cenbg {
+  min-width: 420px;
+  width: 100%;
+  height: 100%;
+  background: url(../image/center.png) center top no-repeat;
+  background-size: contain;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+
+.center > .toplogo {
+  width: 100%;
+  height: 35%;
+  margin: auto;
+  padding: 5%;
+}
+
+.center > .toplogo > .logo {
+  min-width: 306px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background: url(../image/LOGO.png) center top no-repeat;
+  background-size: contain;
+}
+
+.center > .loginbox {
+  min-width: 367px;
+  width: 80%;
+  height: 38%;
+  margin: auto;
+}
+
+.center > .loginbox > .inputbox {
+  width: 100%;
+  height: 50%;
+}
+
+.center > .loginbox > .inputbox > .setinput {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid #999;
+  border-radius: 10px;
+  position: relative;
+}
+
+.center > .loginbox > .inputbox > .setinput > input {
+  border: none;
+  width: 93%;
+  height: 50%;
+  margin-left: 16px;
+  padding-left: 30px;
+}
+
+.center > .loginbox > .inputbox > .setinput > input.cont {
+  border-bottom: 1px solid #999;
+}
+
+.center > .loginbox > .inputbox > .setinput:before {
+  content: "";
+  background: url(../image/accounticon.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 19%;
+  left: 4%;
+}
+
+.center > .loginbox > .inputbox > .setinput:after {
+  content: "";
+  background: url(../image/passicon.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 68%;
+  left: 4.5%;
+}
+
+.center > .loginbox > .inputbox > .setinput input.Xbtn {
+  background: url(../image/delicon.png) no-repeat;
+  background-size: contain;
+  width: 12%;
+  height: 13%;
+  position: absolute;
+  top: 20%;
+  left: 81%;
+  cursor: pointer;
+}
+
+.center > .loginbox > .inputbox > .setinput input.eyebtn {
+  background: url(../image/eyeicon.png) no-repeat;
+  background-size: contain;
+  width: 12%;
+  height: 13%;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  cursor: pointer;
+}
+
+.center > .loginbox > .vipbtn {
+  width: 100%;
+  height: 25%;
+  margin: 8px 0px auto;
+}
+
+.center > .loginbox > .vipbtn > a {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: block;
+  color: #ffffff;
+  background-color: #999;
+}
+
+.center > .loginbox > .changebox {
+  width: 80%;
+  height: 25%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.center > .loginbox > .changebox > a.new {
+  width: 48%;
+  height: 80%;
+  color: #ffffff;
+  background-color: #999;
+}
+
+.center > .loginbox > .changebox > a.old {
+  width: 48%;
+  height: 80%;
+  color: #ffffff;
+  background-color: #999;
+}
+
+.center > .bottomlogo {
+  min-width: 148px;
+  width: 35%;
+  height: 20%;
+  background: url(../image/bottom_LOGO.png) center top no-repeat;
+  background-size: contain;
+  margin: 30px auto;
+}
+
+.main > .player_L {
+  position: absolute;
+  background: url(../image/ballplayer_L.png) center top no-repeat;
+  -webkit-filter: drop-shadow(-15px 0px 10px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(-15px 0px 10px rgba(0, 0, 0, 0.7));
+  background-size: contain;
+  width: 40%;
+  height: 80%;
+  top: 20%;
+  left: 5%;
+  -webkit-animation: player_Lani 0.8s;
+          animation: player_Lani 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main > .player_R {
+  position: absolute;
+  background: url(../image/ballplayer_R.png) center top no-repeat;
+  -webkit-filter: drop-shadow(-15px 0px 20px rgba(0, 0, 0, 0.863));
+          filter: drop-shadow(-15px 0px 20px rgba(0, 0, 0, 0.863));
+  background-size: contain;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 45%;
+  -webkit-animation: player_Rani 0.8s;
+          animation: player_Rani 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}

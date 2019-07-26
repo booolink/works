@@ -1,0 +1,205 @@
+@import "var";
+@import "ani";
+
+.center {
+  min-width: 420px;
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  & > .cenbg{
+    min-width: 420px;
+    width: 100%;
+    height: 100%;
+    background: url(../image/center.png) center top no-repeat;
+    background-size: contain;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+  }
+  & > .toplogo {
+    
+    width: 100%;
+    height: 35%;
+    margin: auto;
+    padding: 5%;
+    & > .logo {
+      min-width: 306px;
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      background: url(../image/LOGO.png) center top no-repeat;
+      background-size: contain;
+    }
+  }
+  > .loginbox {
+    min-width: 367px;
+    width: 80%;
+    height: 38%;
+    margin: auto;
+
+    //輸入外框BOX
+    > .inputbox {
+      width: 100%;
+      height: 50%;
+      //外框倒角
+      & > .setinput {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        border: 1px solid #999;
+        border-radius: 10px;
+        position: relative;
+        //輸入內部&中線設定
+        & > input {
+          border: none;
+          width: 93%;
+          height: 50%;
+          margin-left: 16px;
+          padding-left: 30px;
+          &.cont {
+            border-bottom: 1px solid #999;
+          }
+        }
+        //前方圖示 帳號
+        &:before {
+          content: "";
+          background: url(../image/accounticon.png) no-repeat;
+          background-size: contain;
+          width: 15%;
+          height: 15%;
+          position: absolute;
+          top: 19%;
+          left: 4%;
+        }
+        //前方圖示 密碼
+        &:after {
+          content: "";
+          background: url(../image/passicon.png) no-repeat;
+          background-size: contain;
+          width: 15%;
+          height: 15%;
+          position: absolute;
+          top: 68%;
+          left: 4.5%;
+        }
+        //DEL按鈕
+        & input.Xbtn {
+          background: url(../image/delicon.png) no-repeat;
+          background-size: contain;
+          width: 12%;
+          height: 13%;
+          position: absolute;
+          top: 20%;
+          left: 81%;
+          cursor: pointer;
+        }
+        //眼睛按鈕
+        & input.eyebtn {
+          background: url(../image/eyeicon.png) no-repeat;
+          background-size: contain;
+          width: 12%;
+          height: 13%;
+          position: absolute;
+          top: 70%;
+          left: 80%;
+          cursor: pointer;
+        }
+      }
+    }
+    //會員登入按鈕
+    > .vipbtn {
+      width: 100%;
+      height: 25%;
+      margin: 8px 0px auto;
+      & > a {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        display: block;
+        color: #ffffff;
+        background-color: #999;
+      }
+    }
+    //新舊頁面登入按鈕
+    > .changebox {
+      width: 80%;
+      height: 25%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      & > a.new {
+        width: 48%;
+        height: 80%;
+        color: #ffffff;
+        background-color: #999;
+      }
+      & > a.old {
+        width: 48%;
+        height: 80%;
+        color: #ffffff;
+        background-color: #999;
+      }
+    }
+  }
+  > .bottomlogo {
+    min-width:148px ;
+    width: 35%;
+    height: 20%;
+    background: url(../image/bottom_LOGO.png) center top no-repeat;
+    background-size: contain;
+    margin: 30px auto;
+  }
+}
+.main {
+  > .player_L {
+    position: absolute;
+    background: url(../image/ballplayer_L.png) center top no-repeat;
+    filter: drop-shadow(-15px 0px 10px rgba(0, 0, 0, 0.7));
+    background-size: contain;
+    width: 40%;
+    height: 80%;
+    top: 20%;
+    left: 5%;
+    animation: player_Lani 0.8s;
+    animation-fill-mode: forwards;
+  }
+  > .player_R {
+    position: absolute;
+    background: url(../image/ballplayer_R.png) center top no-repeat;
+    filter: drop-shadow(-15px 0px 20px rgba(0, 0, 0, 0.863));
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 45%;
+    animation: player_Rani 0.8s;
+    animation-fill-mode: forwards;
+  }
+}
+
+// @media screen and (max-width: 1000px) {
+//   .loginbox {
+//     transform: translate(8%);
+//   }
+//   .bottomlogo {
+//     transform: translate(40%);
+//   }
+//   .logo {
+//     transform: translate(17%);
+//   }
+
+// }
+
+// @media screen and (max-width:800px) {
+//   .loginbox{
+//   transform: scale(1.2,0.8) translateY(-60%);
+// }
+// .bottomlogo{
+//   transform: translateY(-130%);
+// }
+//   .changebox a{
+//     line-height: 250%;
+//   }
+// }
