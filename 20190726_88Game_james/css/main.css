@@ -3,23 +3,27 @@
 }
 
 html {
-  min-width: 1000px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  margin: auto;
 }
 
 body {
+  min-width: 1000px;
   margin: 0;
   padding: 0;
-  width: 100%;
+  margin: auto;
+  width: 100vw;
   height: 100%;
 }
 
 .main {
+  width: 100%;
   height: 100%;
+  margin: auto;
   background: url(../image/back.png) center top no-repeat;
   background-size: cover;
 }
