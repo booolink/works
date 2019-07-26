@@ -25,6 +25,8 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: url(../image/back.png) center center no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -32,10 +34,8 @@ body {
   position: relative;
   margin: auto;
   overflow: hidden;
-  background: url(../image/back.png) center center no-repeat;
-  background-size: cover;
 }
- //主要背景
+//主要背景
 //  .bg {
 //   width: 100%;
 //   height: 100vh;
