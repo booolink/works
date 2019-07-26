@@ -6,7 +6,7 @@ $bgccolor: #a8182e;
 }
 html {
   min-width: $min-width;
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -30,8 +30,6 @@ body {
   // background-size: cover;
 }
 .center {
-  // max-width: 1350px;
-  // min-width: 1200px;
   width: 90%;
   height: 90%;
   margin: auto;
@@ -46,9 +44,5 @@ body {
     background-size: cover;
     position: absolute;
     z-index: 1;
-    // animation: bgnani 1s;
-    // animation-fill-mode: forwards;
-    // animation-delay: 0.3s;
-    // opacity: 0;
   }
 }
