@@ -1,0 +1,470 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-width: 1200px;
+  background-color: #a8182e;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  min-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: url(../image/back.png) center top no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  z-index: -999;
+}
+
+input {
+  background: transparent;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  color: #fff;
+  width: 70%;
+  height: 40px;
+  font-weight: 900;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+a:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+a {
+  width: 172px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+@-webkit-keyframes bgnani {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bgnani {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes upani {
+  0% {
+    top: 300px;
+    opacity: 0;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes upani {
+  0% {
+    top: 300px;
+    opacity: 0;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes updownani {
+  0% {
+    top: 65%;
+  }
+  20% {
+    top: 68%;
+  }
+  40% {
+    top: 65%;
+  }
+  60% {
+    top: 68%;
+  }
+  80% {
+    top: 65%;
+  }
+  100% {
+    top: 68%;
+  }
+}
+
+@keyframes updownani {
+  0% {
+    top: 65%;
+  }
+  20% {
+    top: 68%;
+  }
+  40% {
+    top: 65%;
+  }
+  60% {
+    top: 68%;
+  }
+  80% {
+    top: 65%;
+  }
+  100% {
+    top: 68%;
+  }
+}
+
+@-webkit-keyframes girlupani {
+  0% {
+    -webkit-transform: translate(0%, 10%);
+            transform: translate(0%, 10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes girlupani {
+  0% {
+    -webkit-transform: translate(0%, 10%);
+            transform: translate(0%, 10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes girl_Rani {
+  0% {
+    -webkit-transform: translate(20%, 10%);
+            transform: translate(20%, 10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(20%, 0%);
+            transform: translate(20%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes girl_Rani {
+  0% {
+    -webkit-transform: translate(20%, 10%);
+            transform: translate(20%, 10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(20%, 0%);
+            transform: translate(20%, 0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes logoani {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes logoani {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.center {
+  max-width: 1350px;
+  min-width: 1258px;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.center .centerbg {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(../image/pieces.png) center top no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -10;
+  -webkit-animation: bgnani 1s;
+          animation: bgnani 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  opacity: 0;
+}
+
+.center .balloons {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  background: url(../image/balloons.png) center top no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -5;
+  left: 25%;
+  top: 5%;
+  -webkit-animation: upani .5s;
+          animation: upani .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  opacity: 0;
+}
+
+.center .girl_gurlp {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  left: 15%;
+  top: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center .girl_gurlp > .girl_L {
+  width: 40%;
+  height: 100%;
+  background: url(../image/girls_L.png) center bottom no-repeat;
+  background-size: contain;
+  -webkit-animation: girlupani 1s;
+          animation: girlupani 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.center .girl_gurlp > .girl_R {
+  width: 50%;
+  height: 100%;
+  background: url(../image/girls_R.png) center bottom no-repeat;
+  background-size: contain;
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+  -webkit-animation: girl_Rani 1s;
+          animation: girl_Rani 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  opacity: 0;
+}
+
+.center .logobox {
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  z-index: 2;
+}
+
+.center .logobox > .logo {
+  width: 100%;
+  height: 100%;
+  background: url(../image/toplogo.png) center top no-repeat;
+  background-size: contain;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-animation: logoani 1s;
+          animation: logoani 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.center .footer {
+  width: 38%;
+  height: 38%;
+  background: url(../image/143.png) center top no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 31%;
+  top: 68%;
+  -webkit-animation: updownani .2s;
+          animation: updownani .2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.center .loginbox {
+  width: 24%;
+  height: 25%;
+  position: absolute;
+  z-index: 10;
+  left: 38%;
+  top: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center .loginbox > .inputbox {
+  width: 67%;
+}
+
+.center .loginbox > .inputbox input {
+  width: 100%;
+  border: 1px solid #fff;
+  margin: 2px 0px;
+}
+
+.center .loginbox a {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #5b1ca8), color-stop(80%, #53e6d5));
+  background: linear-gradient(0deg, #5b1ca8 19%, #53e6d5 80%);
+  border: 1px solid #008aff;
+  color: #ffffff;
+}
+
+.center .loginbox .viplogin {
+  width: 31%;
+  height: 46%;
+}
+
+.center .loginbox .viplogin input {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #5b1ca8), color-stop(80%, #53e6d5));
+  background: linear-gradient(0deg, #5b1ca8 19%, #53e6d5 80%);
+  border: 1px solid #008aff;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.center .loginbox .viplogin input[type="submit"]:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.center .loginbox > .change {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+.center .loginbox > .change a.firsta {
+  width: 47%;
+}
+
+.center .loginbox > .change a.last {
+  width: 47%;
+  margin-left: 4%;
+  color: #666;
+  background: #f6e7c9;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .center {
+    -webkit-transform: translate(-10%);
+            transform: translate(-10%);
+  }
+  .girl_R {
+    -webkit-transform: translate(20%, 2%) !important;
+            transform: translate(20%, 2%) !important;
+  }
+}
