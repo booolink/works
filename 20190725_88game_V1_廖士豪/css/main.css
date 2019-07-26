@@ -261,7 +261,6 @@ a {
 }
 
 .center {
-  min-width: 1200px;
   width: 90%;
   height: 90%;
   margin: auto;
