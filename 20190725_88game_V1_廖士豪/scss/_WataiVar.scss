@@ -10,11 +10,12 @@ $min-width: 1000px;
   // outline: 1px solid red;
 }
 html {
-  min-width: $min-width;
+  
   width: 100%;
   background-color: $bgccolor;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   margin: 0;
   padding: 0;
 }
@@ -24,16 +25,22 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  min-width: $min-width;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
 }
 
 .main {
   height: 100%;
   position: relative;
   margin: auto;
-  overflow: hidden;
-  background: url(../image/back.png) center center no-repeat;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: url(../image/back.png) center top no-repeat;
   background-size: cover;
+  overflow-x: hidden;
+
 }
  //主要背景
 //  .bg {
