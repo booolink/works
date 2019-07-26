@@ -1,32 +1,34 @@
-$bgccolor: #a8182e;
-$fontfamily: "微軟正黑體";
-$min-width: 1000px;
-* {
-  box-sizing: border-box;
-  // outline: 1px solid red;
-}
-html {
-    font-family: Microsoft JhengHei;
-    background: $bgccolor;
-    width: 100%;
-    min-width: 1000px;
-    height: 100%;
-    overflow-y: hidden;
- }
+// $bgccolor: #a8182e;
+// $fontfamily: "微軟正黑體";
+// $min-width: 1000px;
+// * {
+//   box-sizing: border-box;
+//   // outline: 1px solid red;
+// }
+// html {
+//     font-family: Microsoft JhengHei;
+//     background: $bgccolor;
+//     width: 100%;
+//     min-width: 1000px;
+//     height: 100%;
+//     overflow-y: hidden;
+//  }
+
+
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    vertical-align: baseline; 
+    min-width: 800px;
+    overflow: hidden;
 }
 
 .main {
     position: relative;
     width: 100%;
-    min-width: 1000px;
     height: 100vh;
-    overflow: hidden;
+    
  }
 
   //主要背景
@@ -42,31 +44,31 @@ body {
     top: 0;
 
   }
-  @media screen and (max-width:1000px){
-    html {
-        min-width: $min-width;
-        width: 100%;
-        background-color: $bgccolor;
-        height: 100%;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
+//   @media screen and (max-width:414px){
+//     html {
+//         min-width: $min-width;
+//         width: 100%;
+//         background-color: $bgccolor;
+//         height: 100%;
+//         overflow: hidden;
+//         margin: 0;
+//         padding: 0;
+//       }
       
-      body {
+//       body {
         
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-      }
+//         margin: 0;
+//         padding: 0;
+//         width: 100%;
+//         height: 100vh;
+//         overflow: hidden;
+//       }
       
-      .main {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        margin: auto;
-        overflow: hidden;
-      }
-  }
+//       .main {
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//         margin: auto;
+//         overflow: hidden;
+//       }
+//   }
