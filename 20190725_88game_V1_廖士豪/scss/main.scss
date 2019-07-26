@@ -18,7 +18,7 @@
     z-index: -10;
     animation: bgnani 1s;
     animation-fill-mode: forwards;
-    animation-delay: .3s;
+    animation-delay: 0.3s;
     opacity: 0;
   }
   & .balloons {
@@ -31,9 +31,9 @@
     z-index: -5;
     left: 25%;
     top: 5%;
-    animation: upani .5s;
+    animation: upani 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: .3s;
+    animation-delay: 0.3s;
     opacity: 0;
   }
   & .girl_gurlp {
@@ -61,7 +61,7 @@
       transform: translate(20%);
       animation: girl_Rani 1s;
       animation-fill-mode: forwards;
-      animation-delay: .2s;
+      animation-delay: 0.2s;
       opacity: 0;
     }
   }
@@ -91,9 +91,9 @@
     position: absolute;
     left: 31%;
     top: 68%;
-    animation: updownani .2s;
+    animation: updownani 0.2s;
     animation-fill-mode: forwards;
-    animation-delay: .2s;
+    animation-delay: 0.2s;
   }
   & .loginbox {
     width: 24%;
@@ -154,13 +154,3 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  
-  .center {
-    width: 90%;
-    height: 90%;
-  }
-  .girl_R {
-    transform: translate(20%, 2%) !important;
-  }
-}
