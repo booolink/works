@@ -1,0 +1,71 @@
+@keyframes bgnani {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes upani {
+  0% {
+    top: 300px;
+    opacity: 0;
+  }
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+}
+@keyframes updownani {
+  0% {
+    top: 65%;
+  }
+  20% {
+    top: 68%;
+  }
+  40% {
+    top: 65%;
+  }
+  60% {
+    top: 68%;
+  }
+  80% {
+    top: 65%;
+  }
+  100% {
+    top: 68%;
+  }
+}
+@keyframes girlupani {
+  0% {
+    transform: translate(0%,10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%,0%);
+    opacity: 1;
+  }
+}
+@keyframes girl_Rani {
+  0% {
+    transform: translate(20%,10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(20%,0%);
+    opacity: 1;
+  }
+}
+
+@keyframes logoani {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
