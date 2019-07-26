@@ -30,9 +30,17 @@ body {
   margin: auto;
   overflow-x: hidden;
   overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
   background: url(../image/back.png) center top no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -999;
 }
 
 input {
@@ -457,9 +465,8 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    margin-left: -70%;
-    -webkit-transform: scale(0.7) translateY(-22%);
-            transform: scale(0.7) translateY(-22%);
+  .main {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
