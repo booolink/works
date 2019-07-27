@@ -76,7 +76,7 @@
     height: 40%;
     position: absolute;
     left: 25%;
-    top: 10%;
+    top: 8%;
     z-index: 4;
     //上面88GAME
     & .logo {
@@ -111,7 +111,7 @@
     position: absolute;
     z-index: 10;
     left: calc((100% - 350px) / 2);
-    top: 35%;
+    top: 300px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
