@@ -1,4 +1,4 @@
-$bgccolor: #0a131d;
+$bgccolor: #121823;
 $fontfamily: "微軟正黑體";
 $fontsizeone: 24px;
 $fontsizetwo: 20px;
@@ -21,7 +21,7 @@ body {
   padding: 0;
   height: 800px;
   min-width: $min-width;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main {
