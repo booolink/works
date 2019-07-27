@@ -5,6 +5,7 @@ $fontsizetwo: 20px;
 $fontsizethr: 18px;
 $fontsizefour: 16px;
 $min-width: 1000px;
+$girl_r:30%;
 * {
   box-sizing: border-box;
   // outline: 1px solid red;
@@ -13,32 +14,24 @@ html {
   background-color: $bgccolor;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 800px;
   min-width: $min-width;
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .main {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  margin: auto;
-
-}
-//  主要背景
-.bg {
-  width: 100vw;
   height: 100%;
+  position: relative;
   background: url(../image/back.png) center top no-repeat;
   background-size: cover;
-  position: absolute;
-  top: 0;
-  z-index: -999;
+  margin: auto;
 }
 
 //輸入框外部設定
@@ -84,3 +77,5 @@ a {
 //   background-size: contain;
 //   cursor: pointer;
 // }
+//  HTML meta
+// <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

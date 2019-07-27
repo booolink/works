@@ -8,31 +8,24 @@ html {
   background-color: #a8182e;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 800px;
   min-width: 1000px;
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .main {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  margin: auto;
-}
-
-.bg {
-  width: 100vw;
   height: 100%;
+  position: relative;
   background: url(../image/back.png) center top no-repeat;
   background-size: cover;
-  position: absolute;
-  top: 0;
-  z-index: -999;
+  margin: auto;
 }
 
 input {
@@ -204,26 +197,26 @@ a {
 
 @-webkit-keyframes girl_Rani {
   0% {
-    -webkit-transform: translate(20%, 10%);
-            transform: translate(20%, 10%);
+    -webkit-transform: translate(30%, 10%);
+            transform: translate(30%, 10%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translate(20%, 0%);
-            transform: translate(20%, 0%);
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
     opacity: 1;
   }
 }
 
 @keyframes girl_Rani {
   0% {
-    -webkit-transform: translate(20%, 10%);
-            transform: translate(20%, 10%);
+    -webkit-transform: translate(30%, 10%);
+            transform: translate(30%, 10%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translate(20%, 0%);
-            transform: translate(20%, 0%);
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
     opacity: 1;
   }
 }
@@ -259,8 +252,6 @@ a {
   height: 90%;
   margin: auto;
   position: relative;
-  -webkit-transform: translateY(2%);
-          transform: translateY(2%);
 }
 
 .center .centerbg {
@@ -281,14 +272,14 @@ a {
 }
 
 .center .balloons {
-  width: 50%;
-  height: 90%;
+  width: 45%;
+  height: 80%;
   margin: auto;
   background: url(../image/balloons.png) center top no-repeat;
   background-size: cover;
   position: absolute;
   z-index: 2;
-  left: 25%;
+  left: 27.5%;
   top: 5%;
   -webkit-animation: upani 0.5s;
           animation: upani 0.5s;
@@ -300,11 +291,11 @@ a {
 }
 
 .center .girl_gurlp {
-  width: 70%;
+  width: 90%;
   height: 80%;
   margin: auto;
   position: absolute;
-  left: 15%;
+  left: 3%;
   top: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,8 +320,8 @@ a {
   height: 100%;
   background: url(../image/girls_R.png) center bottom no-repeat;
   background-size: contain;
-  -webkit-transform: translate(20%);
-          transform: translate(20%);
+  -webkit-transform: translate(30%);
+          transform: translate(30%);
   -webkit-animation: girl_Rani 1s;
           animation: girl_Rani 1s;
   -webkit-animation-fill-mode: forwards;
@@ -341,10 +332,10 @@ a {
 }
 
 .center .logobox {
-  width: 40%;
-  height: 20%;
+  width: 50%;
+  height: 40%;
   position: absolute;
-  left: 30%;
+  left: 25%;
   top: 10%;
   z-index: 4;
 }
@@ -364,12 +355,12 @@ a {
 }
 
 .center .footer {
-  width: 38%;
-  height: 38%;
+  width: 40%;
+  height: 40%;
   background: url(../image/143.png) center top no-repeat;
   background-size: contain;
   position: absolute;
-  left: 31%;
+  left: calc((100% - 40%) / 2);
   top: 68%;
   z-index: 5;
   -webkit-animation: updownani 0.2s;
@@ -381,12 +372,12 @@ a {
 }
 
 .center .loginbox {
-  width: 24%;
-  height: 25%;
+  width: 350px;
+  height: 200px;
   position: absolute;
   z-index: 10;
-  left: 38%;
-  top: 33%;
+  left: calc((100% - 350px) / 2);
+  top: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,11 +407,10 @@ a {
 
 .center .loginbox .viplogin {
   width: 31%;
-  height: 46%;
+  height: 44%;
 }
 
 .center .loginbox .viplogin input {
-  min-width: 94px;
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #5b1ca8), color-stop(80%, #53e6d5));
@@ -428,6 +418,7 @@ a {
   border: 1px solid #008aff;
   color: #ffffff;
   border-radius: 10px;
+  text-align: center;
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
 }
@@ -454,11 +445,4 @@ a {
   color: #666;
   background: #f6e7c9;
   border: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .center {
-    -webkit-transform: translate(-35%);
-            transform: translate(-35%);
-  }
 }
