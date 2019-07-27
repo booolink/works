@@ -1,0 +1,165 @@
+@import "WataiVar";
+
+.all_box {
+  min-width: 1100px;
+  width: 90%;
+  height: 100%;
+  transform: translate(5%);
+  margin: auto;
+  display: flex;
+  //左邊方塊
+  > .left_block {
+    min-width: 575px;
+    width: 50%;
+    height: 100%;
+    transform: translate(-5%);
+    //球員
+    > .ballboy {
+      max-width: 650px;
+      width: 100%;
+      height: 100%;
+      background: url(../image/ballplayer.png) center bottom no-repeat;
+      background-size: contain;
+      animation: boyani 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+  //右方塊
+  > .right_block {
+    width: 50%;
+    height: 100%;
+    transform: translate(-25%);
+    position: relative;
+    //右方內容總BOX
+    > .right_box {
+      width: 100%;
+      height: 77%;
+      margin-top: 13%;
+
+      //SPORT logo
+      > .toplogo {
+        width: 80%;
+        height: 48%;
+        background: url(../image/toplogo.png) center no-repeat;
+        background-size: contain;
+      }
+      //會員總BOX
+      > .loginbox {
+        width: 45%;
+        transform: translate(55%, 30%);
+        position: relative;
+
+        //會員input總BOX
+        > .viplogin {
+          width: 100%;
+          height: 100%;
+          padding-left: 20px;
+          margin-bottom: 10%;
+          position: relative;
+
+          > input {
+            border: none;
+            padding-left: 25px;
+          }
+          > input[type="text"] {
+            width: 90%;
+            height: 40px;
+            border-bottom: 1px solid #fff;
+          }
+          input.Xbtn {
+            width: 15px;
+            height: 15px;
+            background: url(../image/delicon.png) center no-repeat;
+            background-size: contain;
+            cursor: pointer;
+
+            position: absolute;
+            top: 13%;
+            left: 85%;
+          }
+          > input[type="password"] {
+            width: 90%;
+            height: 40px;
+          }
+          input.eyebtn {
+            width: 15px;
+            height: 15px;
+            background: url(../image/eyeicon.png) center no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            position: absolute;
+            top: 65%;
+            left: 85%;
+          }
+          &:before {
+            content: "";
+            background: url(../image/accounticon.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 13%;
+            left: 5%;
+          }
+          &:after {
+            content: "";
+            background: url(../image/passicon.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 65%;
+            left: 5%;
+          }
+        }
+        > .vipbtn {
+          font-family: $fontfamily;
+          font-style: oblique;
+          font-weight: 700;
+          min-width: 246px;
+          width: 80%;
+          height: 60px;
+          background: linear-gradient(90deg, rgba(159, 21, 120, 0.322) 40%, #2a62d2 80%);
+          display: block;
+          clip-path: polygon(12% 0, 100% 0, 85% 100%, 0% 100%);
+          border: none;
+          cursor: pointer;
+          position: absolute;
+          left: -1%;
+        }
+        .vipbtn:hover {
+          filter: brightness(1.2);
+        }
+      }
+      > .bottomlogo {
+        width: 20%;
+        height: 20%;
+        background: url(../image/bottomlogo.png) center center no-repeat;
+        background-size: contain;
+        margin-left: 33%;
+        margin-top: 15%;
+      }
+    }
+    //斜方底色
+    > .back {
+      min-width: 683px;
+      width: 100%;
+      height: 100%;
+      background: url(../image/right_block-02.png) center center no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      z-index: -888;
+    }
+  }
+}
+
+
+@keyframes boyani {
+  0% {
+    transform: translate(-7%, 20%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
