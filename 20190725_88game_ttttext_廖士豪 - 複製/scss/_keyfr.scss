@@ -50,11 +50,11 @@
 }
 @keyframes girl_Rani {
   0% {
-    transform: translate(20%,10%);
+    transform: translate($girl_r,10%);
     opacity: 0;
   }
   100% {
-    transform: translate(20%,0%);
+    transform: translate($girl_r,0%);
     opacity: 1;
   }
 }
