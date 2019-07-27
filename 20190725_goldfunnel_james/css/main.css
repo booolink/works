@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   height: 800px;
-  min-width: 1200px;
+  min-width: 1000px;
   overflow-x: hidden;
 }
 
@@ -103,15 +103,14 @@ a {
 }
 
 .center > .left_block > .pic {
-  min-width: 400px;
-  width: 90%;
+  width: 470px;
   height: 40%;
   background: url(../image/balls.png) no-repeat;
   background-size: contain;
   position: relative;
   margin: auto;
   top: 20%;
-  left: 5%;
+  left: 13%;
   -webkit-animation: picani 1s;
           animation: picani 1s;
   -webkit-animation-fill-mode: forwards;
@@ -126,7 +125,7 @@ a {
   min-width: 87px;
   width: 25%;
   height: 42%;
-  top: 59%;
+  top: 65%;
   -webkit-animation: ballani 1s;
           animation: ballani 1s;
   -webkit-animation-fill-mode: forwards;
@@ -156,6 +155,7 @@ a {
 }
 
 .center > .right_block > .right_allbox {
+  max-width: 340px;
   width: 80%;
   height: 100%;
 }
@@ -165,7 +165,7 @@ a {
   height: 40%;
   margin-left: 3%;
   background: url(../image/toplogo.png) center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 2%;
 }
 
@@ -268,8 +268,16 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .center {
-    left: 13%;
+@media screen and (max-width: 1050px) {
+  .pic {
+    -webkit-transform: translate(-20%) !important;
+            transform: translate(-20%) !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .pic {
+    -webkit-transform: translate(-10%);
+            transform: translate(-10%);
   }
 }

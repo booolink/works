@@ -13,15 +13,14 @@
     height: 100%;
     margin: auto;
     > .pic {
-      min-width: 400px;
-      width: 90%;
+      width: 470px;
       height: 40%;
       background: url(../image/balls.png) no-repeat;
       background-size: contain;
       position: relative;
       margin: auto;
       top: 20%;
-      left: 5%;
+      left: 13%;
       animation: picani 1s;
       animation-fill-mode: forwards;
       &:before {
@@ -32,7 +31,7 @@
         min-width: 87px;
         width: 25%;
         height: 42%;
-        top: 59%;
+        top: 65%;
         animation: ballani 1s;
         animation-fill-mode: forwards;
       }
@@ -58,6 +57,7 @@
     height: 85%;
     //右邊內容
     > .right_allbox {
+      max-width: 340px;
       width: 80%;
       height: 100%;
       //上方logo
@@ -66,7 +66,7 @@
         height: 40%;
         margin-left: 3%;
         background: url(../image/toplogo.png) center center no-repeat;
-        background-size: cover;
+        background-size: contain;
         padding: 2%;
       }
       //中間登入資訊
@@ -138,8 +138,16 @@
     transform: rotate(0deg);
   }
 }
-@media screen and (min-width:1200px){
-  .center{
-    left: 13%;
+
+
+@media screen and (max-width:1050px){
+  .pic{
+    transform: translate(-20%)  !important ;
+  }
+}
+
+@media screen and (max-width:1300px){
+  .pic{
+    transform: translate(-10%) ;
   }
 }
