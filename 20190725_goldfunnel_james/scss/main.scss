@@ -1,0 +1,147 @@
+@import "WataiVar";
+
+.center {
+  width: 80%;
+  height: 65%;
+  position: absolute;
+  display: flex;
+  left: 10%;
+  top: 15%;
+  //左邊球
+  > .left_block {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    > .pic {
+      min-width: 400px;
+      width: 90%;
+      height: 40%;
+      background: url(../image/balls.png) no-repeat;
+      background-size: contain;
+      position: relative;
+      margin: auto;
+      top: 20%;
+      left: 5%;
+      animation: picani 1s;
+      animation-fill-mode: forwards;
+      &:before {
+        content: "";
+        background: url(../image/2.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        min-width: 87px;
+        width: 25%;
+        height: 42%;
+        top: 59%;
+        animation: ballani 1s;
+        animation-fill-mode: forwards;
+      }
+      &:after {
+        content: "";
+        background: url(../image/3.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        min-width: 87px;
+        width: 20%;
+        height: 45%;
+        top: 20%;
+        left: 68%;
+        animation: ballani 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  //   右邊 方塊
+  > .right_block {
+    min-width: 425px;
+    width: 50%;
+    height: 85%;
+    //右邊內容
+    > .right_allbox {
+      width: 80%;
+      height: 100%;
+      //上方logo
+      > .toplogo {
+        width: 100%;
+        height: 40%;
+        margin-left: 3%;
+        background: url(../image/toplogo.png) center center no-repeat;
+        background-size: cover;
+        padding: 2%;
+      }
+      //中間登入資訊
+      > .loginbox {
+        width: 80%;
+        height: 35%;
+        margin: 1% auto 70px;
+        //切換版本
+        > .change {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          margin-bottom: 1%;
+          & a.new {
+            width: 48%;
+            background: linear-gradient(0deg, #c922ae 1%, #f078d9 88%);
+          }
+          & a.old {
+            width: 48%;
+            margin-left: 5%;
+            background: linear-gradient(0deg, #fdd63b 1%, #e09a0b 88%);
+          }
+        }
+        //中間會員輸入
+        & input {
+          width: 90%;
+          height: 40px;
+          border-radius: 10px;
+          margin: 1% calc((100% - 90%) / 2);
+          padding-left: 5%;
+        }
+        .input_box {
+          margin: 1% auto;
+        }
+        //會員登入按鈕
+        a.viplogin {
+          width: 90%;
+          margin: 1% calc((100% - 90%) / 2);
+          background: linear-gradient(0deg, #c922ae 1%, #f078d9 88%);
+        }
+      }
+      //下面logo
+      > .bottomlogo {
+        width: 80%;
+        height: 14%;
+        margin: auto;
+        background: url(../image/bottomlogo.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+
+
+@keyframes picani {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 1;
+  }
+}
+@keyframes ballani {
+  0% {
+    transform: rotate(270deg) ;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (min-width:1200px){
+  .center{
+    left: 13%;
+  }
+}
