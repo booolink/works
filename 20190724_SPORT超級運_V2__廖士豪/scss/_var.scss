@@ -10,37 +10,26 @@ $min-width: 1000px;
   // outline: 1px solid red;
 }
 html {
-  width: 100%;
   background-color: $bgccolor;
-  height: 100vh;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+  height: 800px;
   min-width: $min-width;
+  overflow-x: hidden;
 }
 .main {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   position: relative;
+  background: url(../image/back.png) center top no-repeat;
+  background-size: cover;
   margin: auto;
- 
   //主要背景
-  & .bg {
-    width: 100%;
-    height: 100vh;
-    background: url(../image/back.png) center top no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    z-index: -999;
-  }
 }
 //新舊版切換 A連結
 a {
@@ -81,3 +70,12 @@ input::placeholder {
 input:focus {
   outline: none;
 }
+//輸入後面的X.
+
+// input.Xbtn{
+//   background: url(../image/delicon.png) center no-repeat;
+//   background-size: contain;
+//   cursor: pointer;
+// }
+//  HTML meta
+// <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
