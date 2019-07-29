@@ -1,0 +1,140 @@
+@import "WataiVar";
+
+.all_box {
+  min-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  //左邊方塊
+  > .left_block {
+    min-width: 575px;
+    width: 50%;
+    height: 100%;
+    
+    //球員
+    > .ballboy {
+      width: 600px;
+      height: 85%;
+      background: url(../image/ballplayer.png) center bottom no-repeat;
+      background-size: contain;
+      animation: boyani 1s;
+      animation-fill-mode: forwards;
+      transform: translate(15%);
+    }
+  }
+  //右方塊
+  > .right_block {
+    width: 50%;
+    height: 100%;
+    transform: translate(-35%);
+    position: relative;
+    margin: auto;
+    //右方內容總BOX
+    > .right_box {
+      width: 100%;
+      height: 77%;
+      margin: auto;
+      //SPORT logo
+      > .toplogo {
+        margin: auto;
+        max-width: 750px;
+        min-width: 525px;
+        height: 48%;
+        background: url(../image/toplogo.png) center bottom no-repeat;
+        background-size: contain;
+      }
+      //會員總BOX
+      > .loginbox {
+        max-width: 300px;
+        min-width: 237px;
+        width: 45%;
+        position: relative;
+        margin: auto;
+        //會員input總BOX
+        > .viplogin {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10%;
+          position: relative;
+
+          > input {
+            width: 100%;
+            background-color: #ffffff;
+            padding-left: 30px;
+            border-radius:10px;
+            height: 50px;
+
+          }
+          // > input[type="text"] {
+          // }
+
+          > input[type="password"] {
+            margin-top: 15px;
+          }
+
+          &:before {
+            content: "";
+            background: url(../image/accounticon.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 13%;
+            left: 2%;
+          }
+          &:after {
+            content: "";
+            background: url(../image/passicon.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 70%;
+            left: 2%;
+          }
+        }
+        //會員登入按鈕
+        > .vipbtn {
+          font-family: $fontfamily;
+          font-weight: 700;
+          width: 100%;
+          height: 60px;
+          background: #f4a04d;
+          display: block;
+          border-radius:10px;
+          border: none;
+          cursor: pointer;
+        }
+        //下面LOGO
+        > .bottomlogo {
+          width: 100%;
+          height: 50px;
+          background: url(../image/bottomlogo.png) center center no-repeat;
+          background-size: contain;
+          margin-top: 20px;
+        }
+        //會員登入滑入特效
+        .vipbtn:hover {
+          filter: brightness(1.2);
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .left_block {
+    transform: translate(-30%);
+  } 
+}
+
+@keyframes boyani {
+  0% {
+    transform: translate(-10%, 0%);
+  }
+  100% {
+
+  }
+}

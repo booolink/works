@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #1f538b;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  min-width: 1000px;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../image/back.png) center top no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+input {
+  background: transparent;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  color: #333;
+  font-weight: 900;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(199, 198, 198, 0.733);
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+a:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+a {
+  width: 172px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#701519), to(#bc1b21));
+  background: linear-gradient(0deg, #701519 0%, #bc1b21 100%);
+}
+
+.all_box {
+  min-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all_box > .left_block {
+  min-width: 575px;
+  width: 50%;
+  height: 100%;
+}
+
+.all_box > .left_block > .ballboy {
+  width: 600px;
+  height: 85%;
+  background: url(../image/ballplayer.png) center bottom no-repeat;
+  background-size: contain;
+  -webkit-animation: boyani 1s;
+          animation: boyani 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translate(15%);
+          transform: translate(15%);
+}
+
+.all_box > .right_block {
+  width: 50%;
+  height: 100%;
+  -webkit-transform: translate(-35%);
+          transform: translate(-35%);
+  position: relative;
+  margin: auto;
+}
+
+.all_box > .right_block > .right_box {
+  width: 100%;
+  height: 77%;
+  margin: auto;
+}
+
+.all_box > .right_block > .right_box > .toplogo {
+  margin: auto;
+  max-width: 750px;
+  min-width: 525px;
+  height: 48%;
+  background: url(../image/toplogo.png) center bottom no-repeat;
+  background-size: contain;
+}
+
+.all_box > .right_block > .right_box > .loginbox {
+  max-width: 300px;
+  min-width: 237px;
+  width: 45%;
+  position: relative;
+  margin: auto;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .viplogin {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .viplogin > input {
+  width: 100%;
+  background-color: #ffffff;
+  padding-left: 30px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .viplogin > input[type="password"] {
+  margin-top: 15px;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .viplogin:before {
+  content: "";
+  background: url(../image/accounticon.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 13%;
+  left: 2%;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .viplogin:after {
+  content: "";
+  background: url(../image/passicon.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 70%;
+  left: 2%;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .vipbtn {
+  font-family: "微軟正黑體";
+  font-weight: 700;
+  width: 100%;
+  height: 60px;
+  background: #f4a04d;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.all_box > .right_block > .right_box > .loginbox > .bottomlogo {
+  width: 100%;
+  height: 50px;
+  background: url(../image/bottomlogo.png) center center no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.all_box > .right_block > .right_box > .loginbox .vipbtn:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 1500px) {
+  .left_block {
+    -webkit-transform: translate(-30%);
+            transform: translate(-30%);
+  }
+}
+
+@-webkit-keyframes boyani {
+  0% {
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+  }
+}
+
+@keyframes boyani {
+  0% {
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+  }
+}
