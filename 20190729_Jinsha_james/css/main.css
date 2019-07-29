@@ -205,11 +205,15 @@ a {
   border-radius: 10px;
   padding-left: 5%;
   background-color: #fff;
-  border: 2px solid #fd9e0e;
+  border: 2px solid #e08701;
 }
 
 .center > .center_block > .transparent > .loginbox input[type="password"] {
   margin-top: 6px;
+}
+
+.center > .center_block > .transparent > .loginbox input:focus {
+  border: 2px solid #f8bf6a;
 }
 
 .center > .center_block > .transparent > .loginbox .viplogin {
