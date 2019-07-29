@@ -1,0 +1,88 @@
+$bgccolor: #fff18f;
+$fontfamily: "微軟正黑體";
+$fontsizeone: 24px;
+$fontsizetwo: 20px;
+$fontsizeplace: 16px;
+$fontsizefour: 1.3em;
+$min-width: 1000px;
+$min-height: 1000px;
+* {
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+html {
+  background-color: $bgccolor;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+input{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: $min-height;
+  min-width: $min-width;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../image/back.png) center top no-repeat;
+  background-size: cover;
+  margin: auto;
+  position: -999;
+}
+
+//輸入框外部設定
+input {
+  background: transparent;
+  font-family: $fontfamily;
+  font-size: $fontsizetwo;
+  color: #555;
+  width: 70%;
+  height: 40px;
+  font-weight: 900;
+}
+//輸入框內部設定
+input::placeholder {
+  color: #999999;
+  font-family: $fontfamily;
+  font-size: $fontsizeplace;
+  
+}
+// 輸入框選取時消失
+input:focus {
+  outline: none;
+}
+//A連結滑入特效
+a:hover {
+  filter: brightness(1.2) drop-shadow(0px 0px 10px #fff);
+}
+//新舊版切換 A連結
+a {
+  width: 172px;
+  height: 50px;
+  line-height: 2.5em;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: $fontfamily;
+  font-size: $fontsizefour;
+  font-weight: 700;
+  color: #333333;
+}
+//輸入後面的X.
+
+// input.Xbtn{
+//   background: url(../image/delicon.png) center no-repeat;
+//   background-size: contain;
+//   cursor: pointer;
+// }
+//  HTML meta
+// <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
