@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 1000px;
   min-width: 1000px;
   overflow-x: hidden;
 }
@@ -109,8 +109,7 @@ a {
 }
 
 .all_box > .left_block > .ballboy {
-  max-width: 650px;
-  width: 100%;
+  width: 650px;
   height: 100%;
   background: url(../image/ballplayer.png) center bottom no-repeat;
   background-size: contain;
@@ -259,24 +258,51 @@ a {
   z-index: -888;
 }
 
+@media screen and (max-width: 1500px) {
+  .left_block {
+    -webkit-transform: translate(-40%) !important;
+            transform: translate(-40%) !important;
+  }
+  @-webkit-keyframes boyani {
+    0% {
+      -webkit-transform: translate(-10%, 20%) !important;
+              transform: translate(-10%, 20%) !important;
+    }
+    100% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
+  }
+  @keyframes boyani {
+    0% {
+      -webkit-transform: translate(-10%, 20%) !important;
+              transform: translate(-10%, 20%) !important;
+    }
+    100% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
+  }
+}
+
 @-webkit-keyframes boyani {
   0% {
-    -webkit-transform: translate(-7%, 20%);
-            transform: translate(-7%, 20%);
+    -webkit-transform: translate(-25%, 20%);
+            transform: translate(-25%, 20%);
   }
   100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
   }
 }
 
 @keyframes boyani {
   0% {
-    -webkit-transform: translate(-7%, 20%);
-            transform: translate(-7%, 20%);
+    -webkit-transform: translate(-25%, 20%);
+            transform: translate(-25%, 20%);
   }
   100% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
   }
 }

@@ -1,39 +1,39 @@
-$bgccolor: #630128;
+$bgccolor: #fff18f;
 $fontfamily: "微軟正黑體";
 $fontsizeone: 24px;
 $fontsizetwo: 20px;
 $fontsizethr: 18px;
 $fontsizefour: 16px;
 $min-width: 1000px;
+$min-height: 1000px;
 * {
   box-sizing: border-box;
   // outline: 1px solid red;
 }
 html {
-  
   background-color: $bgccolor;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
 body {
-  
   margin: 0;
   padding: 0;
-  height: 1000px;
+  height: $min-height;
   min-width: $min-width;
   overflow-x: hidden;
 }
-.main {
 
+.main {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(../image/back.png) center top no-repeat;
+  background: url(../image/back.png) center bottom no-repeat;
   background-size: cover;
   margin: auto;
+  position: -999;
 }
-//主要背景
 
 //輸入框外部設定
 input {
@@ -41,14 +41,16 @@ input {
   font-family: $fontfamily;
   font-size: $fontsizetwo;
   color: #fff;
+  width: 70%;
+  height: 40px;
   font-weight: 900;
 }
 //輸入框內部設定
 input::placeholder {
-  color: rgba(199, 198, 198, 0.733);
+  color: #fff;
   font-family: $fontfamily;
   font-size: $fontsizefour;
-  font-style: oblique;
+  
 }
 // 輸入框選取時消失
 input:focus {
@@ -56,23 +58,22 @@ input:focus {
 }
 //A連結滑入特效
 a:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.5) drop-shadow(0px 0px 10px #fff);
 }
 //新舊版切換 A連結
 a {
   width: 172px;
   height: 50px;
-  line-height: 45px;
+  line-height: 3rem;
   text-align: center;
-  border-radius: 10px;
+  // border-radius: 10px;
   display: inline-block;
   text-decoration: none;
   font-family: $fontfamily;
   font-size: $fontsizefour;
-  border: 1px solid #ffffff;
-  background: linear-gradient(0deg, #701519 0%, #bc1b21 100%);
+  font-weight: 700;
+  color: #0b0136;
 }
-
 //輸入後面的X.
 
 // input.Xbtn{
@@ -80,3 +81,5 @@ a {
 //   background-size: contain;
 //   cursor: pointer;
 // }
+//  HTML meta
+// <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

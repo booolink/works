@@ -1,6 +1,7 @@
 @import "WataiVar";
 
 .all_box {
+  
   min-width: 1100px;
   width: 90%;
   height: 100%;
@@ -15,8 +16,8 @@
     transform: translate(-5%);
     //球員
     > .ballboy {
-      max-width: 650px;
-      width: 100%;
+      // max-width: 650px;
+      width: 650px;
       height: 100%;
       background: url(../image/ballplayer.png) center bottom no-repeat;
       background-size: contain;
@@ -154,12 +155,28 @@
   }
 }
 
+@media screen and (max-width: 1500px){
+
+  .left_block {
+    transform: translate(-40%) !important;
+  }
+  @keyframes boyani {
+    0% {
+      transform: translate(-10%, 20%) !important;
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+
+}
+
 
 @keyframes boyani {
   0% {
-    transform: translate(-7%, 20%);
+    transform: translate(-25%, 20%);
   }
   100% {
-    transform: translate(0%, 0%);
+    transform: translate(15%, 0%);
   }
 }
